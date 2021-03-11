@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Randomizer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.ico')}}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='bootstrap.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font-awesome.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='animate.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='hamburgers.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='select2.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+</head>
+<style>
+	.contact1-form-title{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.text-area{
+		margin:0px !important;
+	}
+	.contact1-form-btn{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.contact1-form-text{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.card{
+		padding-right: 0;
+	}
+</style>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="static/img-01.jpg" alt="IMG" id="click_button" >
+			</div>
+
+			<form class="contact1-form validate-form" name="rsForm" method="POST">
+				<span class="contact1-form-title">
+					<b>Word</b>
+				</span>
+				
+				<div>
+					<span class="contact1-form-title">
+						<h6></h6>
+						<hr class="rounded mt-3 mb-3">
+					</span>
+				</div>
+
+				<div>
+					<span class="contact1-form-title">
+						<h3>Definition</h3>
+					</span>
+				</div>
+
+				<div>
+					<span class="contact1-form-title">
+						<h3>TV-Show-Line</h3>
+					</span>
+				</div>
+
+				<div>
+					<span class="contact1-form-title">
+						<h3>TV-Show-Details</h3>
+					</span>
+				</div>
+
+				<!-- <div class="container-contact1-form-btn mt-2 mb-2">
+				--><!-- browser issue is solved here by changing button tag into anchor tag --><!--
+					<a href="javascript:history.go(-1);" class="contact1-form-btn">
+						<span class="contact1-form-text">
+							<b>Edit Item(s)</b>
+						</span>
+					</a>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn" onclick="window.location=window.location;">
+						<span class="contact1-form-text">
+							<b>Generate New</b>
+						</span>
+					</button>
+				</div> -->
+
+			</form>
+		</div>
+	</div>
+<!--===============================================================================================-->
+<script src="{{url_for('static',filename='jquery-3.2.1.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{url_for('static',filename='js/popper.js')}}"></script>
+	<script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{url_for('static',filename='select2.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{url_for('static',filename='tilt.jquery.min.js')}}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+
+
+
+</script>
+
+<!--===============================================================================================-->
+	<script src="{{url_for('static',filename='main.js')}}"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#click_button").click(function(){
+				// $(this).hide();
+				// alert('test');
+
+				$('form[name="rsForm"]').submit()
+			});
+		});
+	</script>
+</body>
+</html>

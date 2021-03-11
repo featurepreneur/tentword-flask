@@ -11,7 +11,7 @@ list_random = [] # initializing The 2nd List
 @app.route('/')
 def home():
 
-    return render_template('index.html')
+    return render_template('results.html')
 
 @app.route('/', methods = ["POST"])
 def get_value():

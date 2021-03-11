@@ -1,8 +1,0 @@
-import tentword as tw
-def tent():
-    word = tw.get_word()
-    print(word)
-
-
-if __name__ == "__main__":
-    tent()
